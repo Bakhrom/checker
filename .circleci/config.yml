@@ -25,5 +25,5 @@ workflows:
     jobs:
       - say-hello
     when:
-      matches: { pattern: "circleci-project-*", value: << pipeline.git.branch >> }
+      matches: { pattern: "circleci-project-.*", value: << pipeline.git.branch >> }
         
