@@ -24,6 +24,6 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
-  when:
-    or:
+    when:
+      or:
       - equal: [ circleci-project-*, << pipeline.git.branch >> ]
